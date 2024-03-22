@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #F6BE00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EspressoController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="215.0" style="-fx-background-color: #6F4E37;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/espresso.jpeg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="11.0" layoutY="172.0" prefHeight="90.0" prefWidth="181.0" text="Espresso">
+               <font>
+                  <Font size="46.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Button fx:id="back" layoutX="82.0" layoutY="322.0" mnemonicParsing="false" onAction="#back" text="BACK">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="115.0" fitWidth="160.0" layoutX="232.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/affagto.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="143.0" prefHeight="18.0" prefWidth="119.0" text=" Affogato Rs.150">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy1" layoutX="339.0" layoutY="175.0" mnemonicParsing="false" onAction="#affogato" prefHeight="34.0" prefWidth="58.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <ImageView fitHeight="115.0" fitWidth="160.0" layoutX="424.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/americano.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="447.0" layoutY="143.0" prefHeight="18.0" prefWidth="119.0" text="Americano Rs.80">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy2" layoutX="525.0" layoutY="175.0" mnemonicParsing="false" onAction="#americano" prefHeight="34.0" prefWidth="58.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <ImageView fitHeight="143.0" fitWidth="137.0" layoutX="249.0" layoutY="238.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/mocha.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="405.0" layoutY="270.0" prefHeight="18.0" prefWidth="111.0" text="Mocha Rs.100">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy3" layoutX="525.0" layoutY="299.0" mnemonicParsing="false" onAction="#mocha" prefHeight="34.0" prefWidth="58.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <TextField fx:id="affprice" layoutX="241.0" layoutY="175.0" prefHeight="34.0" prefWidth="70.0" />
+      <TextField fx:id="ameriprice" layoutX="447.0" layoutY="175.0" prefHeight="34.0" prefWidth="70.0" />
+      <TextField fx:id="mochaprice" layoutX="425.0" layoutY="299.0" prefHeight="34.0" prefWidth="70.0" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

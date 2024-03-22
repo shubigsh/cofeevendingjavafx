@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="468.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SalesController">
+   <children>
+      <TableView fx:id="table" layoutX="3.0" layoutY="52.0" prefHeight="413.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="machine" prefWidth="240.7999939918518" text="Vending Machine" />
+          <TableColumn fx:id="sales" prefWidth="172.79998779296875" text="Sales" />
+            <TableColumn fx:id="revenue" prefWidth="177.60000610351562" text="Revenue" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="179.0" layoutY="6.0" text="Sales and Revenue">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

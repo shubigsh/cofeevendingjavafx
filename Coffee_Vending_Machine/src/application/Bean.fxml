@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BeanController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #6F4E37;">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="200.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Downloads/bean.jpeg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="189.0" prefHeight="63.0" prefWidth="166.0" text="Bean To Coffee">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Button fx:id="back" layoutX="67.0" layoutY="347.0" mnemonicParsing="false" onAction="#back" text="BACK">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="133.0" fitWidth="166.0" layoutX="211.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/cappucino.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="188.0" layoutX="395.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/caramel.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="188.0" layoutX="217.0" layoutY="246.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/americano.jpeg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="247.0" layoutY="159.0" text="Cappuccino Rs.150">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy1" layoutX="311.0" layoutY="188.0" mnemonicParsing="false" onAction="#cappuccino" prefHeight="34.0" prefWidth="50.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Label layoutX="439.0" layoutY="159.0" text="Caramel Macchiato Rs.140">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy2" layoutX="529.0" layoutY="188.0" mnemonicParsing="false" onAction="#caramel" prefHeight="34.0" prefWidth="50.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Label alignment="CENTER" layoutX="424.0" layoutY="277.0" prefHeight="18.0" prefWidth="130.0" text="Americano Rs.100">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Button fx:id="buy3" layoutX="529.0" layoutY="313.0" mnemonicParsing="false" onAction="#americano" prefHeight="34.0" prefWidth="50.0" text="Buy">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <TextField fx:id="cappprice" layoutX="224.0" layoutY="187.0" prefHeight="34.0" prefWidth="75.0" />
+      <TextField fx:id="ameriprice" layoutX="439.0" layoutY="313.0" prefHeight="34.0" prefWidth="75.0" />
+      <TextField fx:id="caramelprice" layoutX="439.0" layoutY="188.0" prefHeight="34.0" prefWidth="75.0" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

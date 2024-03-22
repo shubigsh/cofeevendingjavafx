@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="423.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignController">
+   <children>
+      <AnchorPane layoutX="299.0" prefHeight="423.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="user" layoutX="142.0" layoutY="32.0" />
+            <TextField fx:id="first" layoutX="142.0" layoutY="77.0" />
+            <TextField fx:id="last" layoutX="142.0" layoutY="123.0" />
+            <TextField fx:id="contact" layoutX="142.0" layoutY="168.0" />
+            <TextField fx:id="email" layoutX="143.0" layoutY="217.0" />
+            <Text layoutX="66.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <PasswordField fx:id="password" layoutX="143.0" layoutY="271.0" />
+            <Button fx:id="register" layoutX="83.0" layoutY="373.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="126.0" text="Register" />
+            <Text layoutX="66.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+            <Text layoutX="66.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No" />
+            <Text layoutX="66.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text layoutX="58.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <Text layoutX="66.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <VBox prefHeight="423.0" prefWidth="317.0" style="-fx-background-color: #966F5D;">
+         <children>
+            <Text fontSmoothingType="LCD" strokeWidth="0.0" text="Sign Up !" textAlignment="CENTER" wrappingWidth="317.117919921875">
+               <font>
+                  <Font size="72.0" />
+               </font>
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9263157844543457" green="0.8508381843566895" blue="0.8508381843566895" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7894737124443054" green="0.43157893419265747" blue="0.3684210479259491" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Text>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: light brown;">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" prefHeight="168.0" prefWidth="318.0" text="Regsiter, Tap , Sip" textAlignment="JUSTIFY" textFill="#d92525">
+                     <font>
+                        <Font name="System Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>
